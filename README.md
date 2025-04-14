@@ -31,17 +31,18 @@ Explore the live demo here: [Shop Easy Forever](https://shop-easy-forever-fronte
 ```bash
 cd Shop-Easy-Forever
  ```
-- Install dependencies for both frontend and backend:
+2. Install dependencies for both frontend and backend:
 
 ```bash
 cd frontend && npm install
 cd ../backend && npm install
  ```
-- Set up environment variables:
+3. Set up environment variables:
 
 - Create .env files in both frontend and backend directories.
 - Add required variables (e.g., VITE_BACKEND_URL , MONGO_URI , JWT_SECRET ).
-- Start the development servers:
+
+4. Start the development servers:
 
 ```bash
 cd frontend && npm run dev
