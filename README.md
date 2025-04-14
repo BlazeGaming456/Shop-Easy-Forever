@@ -3,6 +3,8 @@
 Shop Easy Forever is a modern e-commerce platform designed to make online shopping seamless and enjoyable. It features a user-friendly interface, secure payment integration, and a robust admin panel for managing products and orders.
 
 ## Live Demo
+![Uploading image.png…]()
+
 Explore the live demo here: [Shop Easy Forever](https://shop-easy-forever-frontend.vercel.app/)
 
 ## Features
