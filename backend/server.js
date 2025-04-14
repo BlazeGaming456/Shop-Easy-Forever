@@ -16,7 +16,7 @@ const port = process.env.PORT || 4000;
 // CORS Middleware must come FIRST
 const corsOptions = {
   origin: [
-    'https://taskify-frontend-n7s0kc1z1-blazegaming456s-projects.vercel.app/',
+    'https://shop-easy-forever-frontend-8nsuresmj-blazegaming456s-projects.vercel.app',
     'http://localhost:3000',
     'http://localhost:5173'
   ],
