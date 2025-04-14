@@ -13,10 +13,11 @@ import cors from 'cors'
 const app = express();
 const port = process.env.PORT || 4000;
 
-// CORS Middleware must come FIRST
+/ Update CORS configuration
 const corsOptions = {
   origin: [
-    'https://shop-easy-forever-frontend-c700pp3sd-blazegaming456s-projects.vercel.app/',
+    'https://shop-easy-forever-frontend-c700pp3sd-blazegaming456s-projects.vercel.app',
+    'https://shop-easy-forever-frontend.vercel.app',
     'http://localhost:3000',
     'http://localhost:5173'
   ],
