@@ -7,10 +7,30 @@ import userRouter from './routes/userRoute.js';
 import productRouter from './routes/productroute.js';
 import cartRouter from './routes/cartRoute.js';
 import orderRouter from './routes/orderRoute.js';
+import cors from 'cors'
 
 //App Config
 const app = express();
 const port = process.env.PORT || 4000;
+
+// CORS Middleware must come FIRST
+const corsOptions = {
+  origin: [
+    'https://taskify-frontend-n7s0kc1z1-blazegaming456s-projects.vercel.app/',
+    'http://localhost:3000',
+    'http://localhost:5173'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
+
+// Handle preflight requests
+app.options('*', cors(corsOptions));
+
 connectDB();
 connectCloudinary();
 
