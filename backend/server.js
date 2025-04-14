@@ -7,13 +7,11 @@ import userRouter from './routes/userRoute.js';
 import productRouter from './routes/productroute.js';
 import cartRouter from './routes/cartRoute.js';
 import orderRouter from './routes/orderRoute.js';
-import cors from 'cors'
 
 //App Config
 const app = express();
 const port = process.env.PORT || 4000;
 
-/ Update CORS configuration
 const corsOptions = {
   origin: [
     'https://shop-easy-forever-frontend-c700pp3sd-blazegaming456s-projects.vercel.app',
